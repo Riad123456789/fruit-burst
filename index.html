@@ -2,52 +2,103 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Work+Sans:wght@500;700;800&display=swap"
-        rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Work+Sans:wght@500;700;800&display=swap"
+    rel="stylesheet">
 
-    <script src="https://kit.fontawesome.com/1d9e621a4f.js" crossorigin="anonymous"></script>
-    <title>fruit burst</title>
-    
-    <style>
-        .font-family {
-            font-family: 'Lato', sans-serif;
+  <script src="https://kit.fontawesome.com/1d9e621a4f.js" crossorigin="anonymous"></script>
+  <title>fruit burst</title>
+
+  <style>
+    .font-family {
+      font-family: 'Lato', sans-serif;
+    }
+  </style>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#F85559',
+          }
         }
-    </style>
-
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                    }
-                }
-            }
-        }
-    </script>
+      }
+    }
+  </script>
 
 </head>
 
 <body class="font-family">
 
-    <header>
+  <header>
+    <!-- the nav part start here -->
+    <nav class="">
 
-    </header>
-    <main>
+      <div class="hidden sm:hidden md:flex items-center justify-around  max-w-2xl bg-clifford mx-auto h-20 rounded-full 
+      lg:flex items-center justify-around max-w-7xl bg-clifford mx-auto h-20 rounded-full ">
 
-    </main>
-    <footer>
+        <div class="">
+          <ul class=" flex items-center justify-between gap-4">
 
-    </footer>
+            <li class="text-white font-medium text-sm">Home</li>
+            <li class="text-white font-medium text-sm">About Us</li>
+            <li class="text-white font-medium text-sm">Shop</li>
+            <li class="text-white font-medium text-sm">All Fruits</li>
+
+          </ul>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img class="w-10 h-12" src="./images/logo.png" alt="">
+          <h1 class="text-white font-bold text-3xl">Fruit Burst</h>
+        </div>
+
+        <div class="relative">
+          <i class="fa fa-search -mr-5 "></i>
+          <input class="w-80 h-11 rounded-full pl-5 text-slate-300  " placeholder="Search here" type="text" name=""
+            id="">
+
+        </div>
+
+
+      </div>
+
+
+
+      <div class="navbar lg:hidden md:hidden mt-2 ">
+        <div class="flex-1">
+          <img class="w-7 h-8" src="./images/logo.png" alt="">
+          <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
+        </div>
+        <div class="flex-none">
+          <button class="btn btn-square btn-ghost">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              class="inline-block w-5 h-5 stroke-current">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+
+    </nav>
+
+  </header>
+  <main>
+
+  </main>
+  <footer>
+
+  </footer>
 
 </body>
 

@@ -43,7 +43,7 @@
     <!-- the nav part start here -->
     <nav class="">
 
-      <div class="hidden sm:hidden md:flex items-center justify-around  max-w-2xl bg-clifford mx-auto h-20 rounded-full 
+      <div class="hidden sm:hidden md:flex items-center justify-around  max-w-2xl bg-clifford mx-auto mt-10 h-20 rounded-full 
       lg:flex items-center justify-around max-w-7xl bg-clifford mx-auto h-20 rounded-full ">
 
         <div class="">
@@ -63,10 +63,9 @@
         </div>
 
         <div class="relative">
-          <i class="fa fa-search -mr-5 "></i>
           <input class="w-80 h-11 rounded-full pl-5 text-slate-300  " placeholder="Search here" type="text" name=""
             id="">
-
+          <!-- <i class="fa fa-search absolute " style=""></i> -->
         </div>
 
 
@@ -79,22 +78,75 @@
           <img class="w-7 h-8" src="./images/logo.png" alt="">
           <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
         </div>
-        <div class="flex-none">
-          <button class="btn btn-square btn-ghost">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-              class="inline-block w-5 h-5 stroke-current">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-          </button>
+
+        <div class="flex-none mr-8">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
         </div>
       </div>
+      <!-- the banner section here -->
 
+      <div class="max-w-7xl mx-auto mt-10">
+        <div class="carousel ">
+          <div id="slide1" class="carousel-item relative w-full">
 
+            <div class="hero" style="background-image: url(./images/banner1.png);">
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                  <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your</h1>
+                  <h1 class="mb-5 text-5xl font-bold">doorstep</h1>
+                  <p class="mb-5">We supply highly quality organic products</p>
+                  <button class="btn bg-clifford border-none font-extrabold text-white ">Shop Now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="./images/banner2.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="./images/banner3.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="./images/banner4.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+   
     </nav>
 
   </header>
   <main>
-
+         
   </main>
   <footer>
 

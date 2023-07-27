@@ -98,7 +98,8 @@
       </div>
       <!-- the banner section here -->
 
-      <div class="max-w-7xl mx-auto mt-10">
+      <div class=" lg:max-w-7xl mx-auto mt-10">
+
         <div class="carousel ">
           <div id="slide1" class="carousel-item relative w-full">
 
@@ -113,7 +114,6 @@
                 </div>
               </div>
             </div>
-
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide4" class="btn btn-circle">❮</a>
               <a href="#slide2" class="btn btn-circle">❯</a>
@@ -123,19 +123,7 @@
 
 
           <div id="slide2" class="carousel-item relative w-full">
-
-            <div class="hero" style="background-image: url(./images/banner2.png);">
-              <div class="hero-overlay bg-opacity-60"></div>
-              <div class="hero-content text-center text-neutral-content">
-                <div class="max-w-md sticky ">
-                  <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your</h1>
-                  <h1 class="mb-5 text-5xl font-bold">doorstep</h1>
-                  <p class="mb-5">We supply highly quality organic products</p>
-                  <button class="btn bg-clifford border-none font-extrabold text-white ">Shop Now</button>
-                </div>
-              </div>
-            </div>
-
+            <img src="./images/banner2.png" class="w-full" />
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide1" class="btn btn-circle">❮</a>
               <a href="#slide3" class="btn btn-circle">❯</a>
@@ -144,18 +132,7 @@
 
 
           <div id="slide3" class="carousel-item relative w-full">
-
-            <div class="hero" style="background-image: url(./images/banner3.png);">
-              <div class="hero-overlay bg-opacity-60"></div>
-              <div class="hero-content text-center text-neutral-content">
-                <div class="max-w-md sticky ">
-                  <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your</h1>
-                  <h1 class="mb-5 text-5xl font-bold">doorstep</h1>
-                  <p class="mb-5">We supply highly quality organic products</p>
-                  <button class="btn bg-clifford border-none font-extrabold text-white ">Shop Now</button>
-                </div>
-              </div>
-            </div>
+            <img src="./images/banner3.png" class="w-full" />
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide2" class="btn btn-circle">❮</a>
               <a href="#slide4" class="btn btn-circle">❯</a>
@@ -180,11 +157,11 @@
 
 
   <!-- the main section start here -->
-  <main class="">
+  <main>
     <!-- the first section start here -->
     <section>
       <!-- the time section start here -->
-      <div class=" lg:flex justify-around max-w-7xl mx-auto mt-16 ">
+      <div class="mx-auto lg:flex justify-around max-w-7xl mx-auto mt-16 ">
         <div class="flex-1">
           <h1 class="text-4xl">Deal of the day</h1>
           <p class="text-sm mt-2">Contrary to popular belief, is not simply random text. It has roots in a piece of
@@ -559,6 +536,21 @@
     </div>
 
   </footer>
+
+
+
+  <!-- The button to open modal -->
+  <a href="#my_modal_8" class="btn">open modal</a>
+  <!-- Put this part before </body> tag -->
+  <div class="modal" id="my_modal_8">
+    <div class="modal-box">
+      <h3 class="font-bold text-lg">Hello!</h3>
+      <p class="py-4">This modal works with anchor links</p>
+      <div class="modal-action">
+        <a href="#" class="btn">Yay!</a>
+      </div>
+    </div>
+  </div>
 
 </body>
 
